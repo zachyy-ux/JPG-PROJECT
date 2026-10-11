@@ -1,0 +1,281 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- HERO / MAIN SECTION --- */
+.main {
+    width: 100%;
+    background: url(white-radial-gradient.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.navbar {
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    width: 90px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(230, 104, 59);
+    transition: 0.4s ease;
+}
+
+ul li a:hover {
+    color: rgb(59, 174, 209);
+}
+
+.info {
+    margin-left: 10%;
+    margin-top: 6%;
+    color: rgb(36, 32, 30);
+}
+
+.info h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.info span {
+    color: rgb(230, 104, 59);
+}
+
+.info a {
+    text-decoration: none;
+    color: #fff;
+    background: rgb(36, 32, 30);
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: 0.4s ease;
+}
+
+.info a:hover {
+    background: rgb(59, 174, 209);
+}
+
+.image {
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+
+.image img {
+    position: absolute;
+    height: 140%;
+    left: 40%;
+    transform: translate(-50%);
+    bottom: 0;
+    transition: left 2s ease;
+}
+
+.image:hover .boy {
+    left: 55%;
+}
+
+/* --- COMMON SECTION HEADINGS --- */
+.subtitle {
+    color: #888888;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+/* --- ABOUT ME SECTION --- */
+.information {
+    background-color: #0f0f0f;
+    text-align: center;
+    padding: 80px 20px;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.aboutme-box {
+    background-color: #1a1a1a;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 35px 30px;
+    border-radius: 12px;
+    line-height: 2;
+    color: #cccccc;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* --- SKILLS SECTION --- */
+.skills-section {
+    background-color: #0d0d0d;
+    text-align: center;
+    padding: 80px 20px;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-box {
+    background-color: #161616;
+    width: 260px;
+    padding: 40px 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-box:hover {
+    transform: translateY(-8px);
+    background-color: #202020;
+}
+
+.skill-box .icon {
+    width: 40px;
+    height: 40px;
+    fill: rgb(230, 104, 59);
+    margin-bottom: 20px;
+}
+
+.skill-box h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.skill-box p {
+    font-size: 12px;
+    color: #aaaaaa;
+    line-height: 1.5;
+}
+
+/* --- CONTACT SECTION --- */
+.contact-section {
+    background-color: #0f0f0f;
+    text-align: center;
+    padding: 80px 20px;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.contact-box {
+    background-color: #1a1a1a;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    background-color: #2b2b2b;
+    border: 1px solid #444444;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: rgb(230, 104, 59);
+    box-shadow: 0 0 8px rgba(230, 104, 59, 0.4);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn {
+    padding: 12px 24px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: rgb(230, 104, 59);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* --- PHP STATUS MESSAGES --- */
+.status-msg {
+    padding: 12px 14px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.status-msg.success {
+    background-color: rgba(46, 204, 113, 0.15);
+    color: #2ecc71;
+    border: 1px solid #2ecc71;
+}
+
+.status-msg.error {
+    background-color: rgba(231, 76, 60, 0.15);
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+}
