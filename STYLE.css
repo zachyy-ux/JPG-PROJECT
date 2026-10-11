@@ -8,7 +8,6 @@ html {
     box-sizing: border-box;
 }
 
-/* --- HERO / MAIN SECTION --- */
 .main {
     width: 100%;
     background: url(white-radial-gradient.jpg);
@@ -106,7 +105,6 @@ ul li a:hover {
     left: 55%;
 }
 
-/* --- COMMON SECTION HEADINGS --- */
 .subtitle {
     color: #888888;
     font-size: 12px;
@@ -120,7 +118,6 @@ ul li a:hover {
     margin-bottom: 40px;
 }
 
-/* --- ABOUT ME SECTION --- */
 .information {
     background-color: #0f0f0f;
     text-align: center;
@@ -141,7 +138,6 @@ ul li a:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* --- SKILLS SECTION --- */
 .skills-section {
     background-color: #0d0d0d;
     text-align: center;
@@ -189,7 +185,6 @@ ul li a:hover {
     line-height: 1.5;
 }
 
-/* --- CONTACT SECTION --- */
 .contact-section {
     background-color: #0f0f0f;
     text-align: center;
@@ -258,7 +253,6 @@ ul li a:hover {
     transform: translateY(-2px);
 }
 
-/* --- PHP STATUS MESSAGES --- */
 .status-msg {
     padding: 12px 14px;
     border-radius: 8px;
